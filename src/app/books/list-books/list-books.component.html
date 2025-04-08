@@ -1,0 +1,15 @@
+<div class="book-list">
+    <h2>Book List</h2>
+    <div class="books-container">
+      <div class="book-item" *ngFor="let book of books">
+        <a [routerLink]="['book', book.id]" class="card">
+          <p class="card-title">{{ book.title }}</p>
+          <p class="author small-desc">{{ book.author }}</p>
+          <p class="ISBN small-desc truncate">{{ book.ISBN }}</p>
+          <div class="go-corner">
+              <div class="go-arrow">→</div>
+          </div>
+        </a>
+        </div>
+    </div>
+  </div>

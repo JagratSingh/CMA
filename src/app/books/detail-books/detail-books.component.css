@@ -1,0 +1,209 @@
+.user-details {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-details h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.user-info {
+    line-height: 1.6;
+}
+
+.user-info p {
+    margin: 1rem 0;
+    color: #34495e;
+}
+
+.user-info strong {
+    min-width: 100px;
+    display: inline-block;
+    color: #2c3e50;
+}
+
+.buttons{
+    display: flex;
+}
+
+.Btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    height: 40px;
+    border: none;
+    padding: 0px 20px;
+    background-color: #2ecc71;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #27ae60;
+    transition-duration: .3s;
+    margin-right: 10px;
+}
+
+.svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: white;
+    transition-duration: .3s;
+}
+
+.Btn:hover {
+    color: transparent;
+}
+
+.Btn:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+}
+
+.Btn:active {
+    transform: translate(3px, 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0px #27ae60;
+}
+
+/* From Uiverse.io by Tsiangana */ 
+.Btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background: rgb(255, 135, 65);
+    background: linear-gradient(
+      250deg,
+      rgba(255, 135, 65, 1) 15%,
+      rgba(255, 65, 65, 1) 65%
+    );
+  }
+  
+  /* plus sign */
+  .sign {
+    width: 100%;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: white;
+  }
+  /* text */
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: 0.3s;
+  }
+  /* hover effect on button width */
+  .Btn2:hover {
+    width: 145px;
+    border-radius: 40px;
+    transition-duration: 0.3s;
+  }
+  
+  .Btn2:hover .sign {
+    width: 30%;
+    transition-duration: 0.3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn2:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: 0.3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn2:active {
+    transform: translate(2px, 2px);
+  }
+  
+
+.not-found {
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    color: #721c24;
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
+  
+  p{
+    color: red;
+  }
