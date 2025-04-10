@@ -1,0 +1,6 @@
+<ul class="book-list" *ngFor="let b of books">
+    <div *ngIf="b.checkoutBook" class="book-details">
+        <span class="book-title">{{ b.title }}</span> - <span class="book-author">{{ b.author }}</span>
+        <button (click)="changeCheckoutBook(b.id)">Cancel</button>
+    </div>
+</ul>
